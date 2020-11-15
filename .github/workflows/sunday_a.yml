@@ -20,7 +20,7 @@ jobs:
     - name: runtest
       run: make runtest
     - name: Login to DockerHub
-      uses: docker/login-action@v1 
+      uses: mr-smithers-excellent/docker-build-push@v5 
       with:
           image: 9756698611/sunday
           registry: docker.io	
