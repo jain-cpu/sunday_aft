@@ -19,14 +19,4 @@ jobs:
       run: make
     - name: runtest
       run: make runtest
-    - uses: mr-smithers-excellent/docker-build-push@v5
-      name: Build & push Docker image
-      with:
-        image: 9756698611/sunday
-        tags: v1, latest
-        registry: docker.io
-        dockerfile: Dockerfile.ci
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_TOKEN }}
-      
 
