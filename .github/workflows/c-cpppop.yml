@@ -17,8 +17,6 @@ jobs:
       run: ./configure
     - name: make
       run: make
-    - name: make check
-      run: make check
     - name: runtest
       run: make runtest
     - uses: mr-smithers-excellent/docker-build-push@v5
